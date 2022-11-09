@@ -90,21 +90,8 @@ serviceMonitor:
   # scrapeTimeout: 10s
 
 job:
-  autoCreateCluster:
-    enabled: true
-    resources: {}
-    initContainers:
-      resources: {}
-  initdbScripts:
-    enabled: true
-    resources: {}
-    initContainers:
-      resources: {}
-  autoUpdateClusterSpec:
-    enabled: true
-    resources: {}
-    initContainers:
-      resources: {}
+  autoCreateCluster: true
+  autoUpdateClusterSpec: true
   annotations: {}
 
 clusterSpec: {}
